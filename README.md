@@ -6,6 +6,8 @@ Este projeto é uma aplicação acadêmica para demonstrar a resolução do prob
 
 ## API SWAGGER
 https://projeto-corte-unidimensional.onrender.com/docs
+Obs: Para autenticação use o access_token e cole no autorize e faça logout.
+
 ## WEB
 https://projeto-corte-unidimensional-git-main-corte-uni.vercel.app/
 
