@@ -39,8 +39,7 @@ app.include_router(corte_uni_router)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173",
-        "http://127.0.0.1:5173"
+        "https://projeto-corte-unidimensional-git-main-corte-uni.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
