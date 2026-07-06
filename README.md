@@ -2,6 +2,13 @@
 
 Este projeto é uma aplicação acadêmica para demonstrar a resolução do problema de corte unidimensional, combinando uma API backend, uma interface web frontend e um solver de otimização.
 
+# Link
+
+## API
+https://projeto-corte-unidimensional.onrender.com/
+## WEB
+https://projeto-corte-unidimensional-git-main-corte-uni.vercel.app/
+
 ## Objetivo
 
 O sistema permite cadastrar itens com comprimento e quantidade, calcular o melhor aproveitamento de barras padrão e retornar um plano de corte otimizado. A solução foi implementada como um exemplo prático de aplicação de algoritmos e arquitetura web.
