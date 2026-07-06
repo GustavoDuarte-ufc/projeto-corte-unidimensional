@@ -9,7 +9,7 @@ import {
 
 const api = axios.create({
     baseURL:
-        "http://127.0.0.1:8000"
+        "https://projeto-corte-unidimensional.onrender.com/"
 });
 
 api.interceptors.request.use(
@@ -53,7 +53,7 @@ api.interceptors.response.use(
                 const response =
                     await axios.post(
 
-                        "http://127.0.0.1:8000/auth/refresh",
+                        "https://projeto-corte-unidimensional.onrender.com/auth/refresh",
 
                         {
                             refresh_token:
