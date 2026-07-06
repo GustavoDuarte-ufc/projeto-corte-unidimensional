@@ -1,0 +1,75 @@
+### Exemplos de requisições de demonstração
+@baseUrl = https://projeto-corte-unidimensional.onrender.com
+@accessToken = SEU_ACCESS_TOKEN
+@refreshToken = SEU_REFRESH_TOKEN
+
+### 1) Health check
+GET {{baseUrl}}/
+
+### 2) Registrar usuário
+POST {{baseUrl}}/auth/register
+Content-Type: application/json
+
+{
+  "name": "Maria Silva",
+  "email": "maria@example.com",
+  "password": "123456"
+}
+
+### 3) Login
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "maria@example.com",
+  "password": "123456"
+}
+
+### 4) Dados do usuário autenticado
+GET {{baseUrl}}/auth/me
+Authorization: Bearer {{accessToken}}
+
+### 5) Renovar access token
+POST {{baseUrl}}/auth/refresh
+Content-Type: application/json
+
+{
+  "refresh_token": "{{refreshToken}}"
+}
+
+### 6) Logout
+POST {{baseUrl}}/auth/logout
+Content-Type: application/json
+
+{
+  "refresh_token": "{{refreshToken}}"
+}
+
+### 7) Listar sessões
+GET {{baseUrl}}/sessions/
+Authorization: Bearer {{accessToken}}
+
+### 8) Revogar todas as sessões
+DELETE {{baseUrl}}/sessions/all
+Authorization: Bearer {{accessToken}}
+
+### 9) Optimizar corte unidimensional
+POST {{baseUrl}}/otimizar/otimizar
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  "comprimento_padrao": 3100,
+  "itens": [
+    {
+      "id": "item_1",
+      "comprimento": 1150,
+      "quantidade": 3
+    },
+    {
+      "id": "item_2",
+      "comprimento": 800,
+      "quantidade": 2
+    }
+  ]
+}
