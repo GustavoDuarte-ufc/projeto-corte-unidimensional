@@ -4,8 +4,8 @@ Este projeto é uma aplicação acadêmica para demonstrar a resolução do prob
 
 # Link
 
-## API
-https://projeto-corte-unidimensional.onrender.com/
+## API SWAGGER
+https://projeto-corte-unidimensional.onrender.com/docs
 ## WEB
 https://projeto-corte-unidimensional-git-main-corte-uni.vercel.app/
 
